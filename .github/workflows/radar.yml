@@ -1,0 +1,44 @@
+name: Freebie Radar 24/7 Auto Check
+
+on:
+  schedule:
+    # Runs every 4 hours automatically on Microsoft GitHub Cloud
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  check-and-broadcast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Freebie Hunter
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHANNEL: ${{ secrets.TG_CHANNEL }}
+        run: python freebie_hunter.py
+
+      - name: Auto-Commit History
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add posted_games_history.json
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Auto-update posted games history [skip ci]"
+            git push
+          else
+            echo "No new freebies detected in this cycle."
+          fi
