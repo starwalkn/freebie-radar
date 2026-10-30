@@ -1,0 +1,32 @@
+{
+  "last_synced": "2026-10-30T10:29:31Z",
+  "engine_version": "2.4.1",
+  "active_monitors": [
+    {
+      "store": "Epic Games",
+      "status": "Active",
+      "type": "Weekly Freebie",
+      "verified_at": "2026-10-30 10:29:31 (UTC+8)"
+    },
+    {
+      "store": "Steam",
+      "status": "Active",
+      "type": "Promotional 100% OFF",
+      "verified_at": "2026-10-30 10:29:31 (UTC+8)"
+    },
+    {
+      "store": "GOG",
+      "status": "Monitoring",
+      "type": "Weekend Giveaway",
+      "verified_at": "2026-10-30 10:29:31 (UTC+8)"
+    },
+    {
+      "store": "Prime Gaming",
+      "status": "Active",
+      "type": "Monthly Claim",
+      "verified_at": "2026-10-30 10:29:31 (UTC+8)"
+    }
+  ],
+  "poll_interval_hours": 4,
+  "network_status": "healthy"
+}
