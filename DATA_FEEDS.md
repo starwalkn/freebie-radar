@@ -1,11 +1,11 @@
 # 📡 Live Freebie & Deals Radar Feed
-Last Verified: `2026-11-04 19:23:00 (UTC+8)`
+Last Verified: `2026-11-06 17:30:48 (UTC+8)`
 
 | Store | Type | Status | Verified At |
 | :--- | :--- | :--- | :--- |
-| **Epic Games** | Weekly Freebie | `Active` | 2026-11-04 19:23:00 (UTC+8) |
-| **Steam** | Promotional 100% OFF | `Active` | 2026-11-04 19:23:00 (UTC+8) |
-| **GOG** | Weekend Giveaway | `Monitoring` | 2026-11-04 19:23:00 (UTC+8) |
-| **Prime Gaming** | Monthly Claim | `Active` | 2026-11-04 19:23:00 (UTC+8) |
+| **Epic Games** | Weekly Freebie | `Active` | 2026-11-06 17:30:48 (UTC+8) |
+| **Steam** | Promotional 100% OFF | `Active` | 2026-11-06 17:30:48 (UTC+8) |
+| **GOG** | Weekend Giveaway | `Monitoring` | 2026-11-06 17:30:48 (UTC+8) |
+| **Prime Gaming** | Monthly Claim | `Active` | 2026-11-06 17:30:48 (UTC+8) |
 
 > Automated telemetry feed maintained by starwalkn Cloud Radar Engine.
